@@ -1,0 +1,115 @@
+.Main {
+  height: 100%;
+  width: 100%;
+}
+
+.Header-container {
+
+  position: flex;
+  display: block;
+  width: 100%;
+  padding: 30px 0px;
+  gap: 10px;
+  text-align: center;
+  border-top: 2px solid var(--WHITE, #FFFDF3);
+  border-bottom: 2px solid var(--WHITE, #FFFDF3);
+}
+
+.mainHeader {
+  font-family: 'MuseoModerno';
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  color: var(--white, #FFFDF3);
+  justify-content: center;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.project-div {
+  width: 600px;
+  height: 400px;
+  margin: 50px 40px;
+  overflow: hidden;
+}
+
+.project-link {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project-image-container {
+  flex: 1;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease-out;
+}
+
+.project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.project-div:hover .project-image {
+  background: linear-gradient(0deg, rgba(2, 7, 4, 0.90) 0%, rgba(2, 7, 4, 0.90) 100%) lightgray 0px -2.409px / 100% 322.469% no-repeat;
+}
+
+.project-div:hover .project-info {
+  opacity: 1;
+  z-index: 1;
+}
+
+.project-info h2 {
+margin: 10% 0 10% 0;
+color: var(--WHITE, #FFFDF3);
+text-align: center;
+font-family: MuseoModerno;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+display: flex;
+padding: 10px 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+background: rgba(86, 101, 239, 0.50);
+background-size: 0 5%;
+}
+
+.project-info p {
+  color: #FFF;
+font-family: Lexend Exa;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+flex: 1 0 0;
+}

@@ -1,0 +1,55 @@
+
+
+.portfolio-container{
+min-width: 1000px;
+max-width: 2000px;
+}
+@media only screen and (max-width: 500px) {
+  .portfolio-container{
+  max-width: 500px;
+  min-width: auto;
+  }
+  
+}
+.nav-nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 3%;
+  width: 100%;
+  padding-left: 17%;
+}
+
+li {
+  color: #FFFDF3;
+  font-family: 'Lexend Exa';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none; 
+  position: relative;
+  transition: color 0.3s; 
+}
+
+.nav-link.active {
+  color:  #5665EF;
+}
+
+li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFDF3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
