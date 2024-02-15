@@ -26,4 +26,9 @@ const App = () => {
                 }
             }>
                 
-             
+                <PortfolioContainer />
+            </div>
+        </div >
+    );
+}
+export default App;
